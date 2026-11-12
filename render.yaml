@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cloud-library-jinke
+    name: cloud-library-frankwu
     runtime: python
     plan: free
     buildCommand: bash deploy/build.sh

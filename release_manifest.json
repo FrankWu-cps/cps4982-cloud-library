@@ -960,8 +960,8 @@
     },
     {
       "path": "render.yaml",
-      "size_bytes": 488,
-      "sha256": "968c75657e976ade4d9750f11c8180a7570c98cfb97d9656f0a1a58d680c8077"
+      "size_bytes": 490,
+      "sha256": "87b07158ef257671c82426e98ae63b503f8b99a6af3c197d25dff59e252494ca"
     },
     {
       "path": "requirements-web.txt",
@@ -975,6 +975,13 @@
     }
   ],
   "total_files": 192,
-  "total_file_bytes": 225258696,
-  "note": "Manifest hashes cover all staged files except this release_manifest.json itself. No deployment or cloud write has occurred."
+  "total_file_bytes": 225258698,
+  "note": "Manifest hashes cover all staged files except this release_manifest.json itself. The service-name revision changes deployment metadata only; original corpus and index bytes are unchanged.",
+  "configuration_revision": {
+    "requested_render_service_name": "cloud-library-frankwu",
+    "previous_render_service_name": "cloud-library-jinke",
+    "changed_artifact": "render.yaml",
+    "original_book_bytes_unchanged": true,
+    "spark_index_bytes_unchanged": true
+  }
 }
