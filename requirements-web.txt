@@ -1,0 +1,5 @@
+# Web serving uses the immutable projection of the real Spark-built index.
+# Java/PySpark are deliberately local indexing dependencies, not web dependencies.
+Django==5.2.19
+gunicorn>=23,<26
+whitenoise==6.12.0

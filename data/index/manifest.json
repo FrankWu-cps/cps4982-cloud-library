@@ -1,0 +1,46 @@
+{
+  "book_count": 146,
+  "posting_count": 1128755,
+  "unique_terms": 115690,
+  "indexed_tokens": 17029217,
+  "builder": "PySpark",
+  "spark_version": "4.0.1",
+  "spark_master": "local[2]",
+  "python_version": "3.12.14",
+  "formula": "TF=count/eligible document tokens; IDF=ln((N+1)/(DF+1))+1; score=sum(TF-IDF)*matched_unique_terms/query_unique_terms",
+  "tokenization": "lowercase Unicode letters; minimum length 2; no stopword removal; PG body markers stripped for indexing only",
+  "parquet_columns": [
+    "_1 filename",
+    "_2 term",
+    "_3 tfidf"
+  ],
+  "parquet_parts": [
+    {
+      "filename": "part-00000-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "sha256": "2f9a1399266434708b70aa29be0d9d7c25ad5ca6820733ecb70495c0d52172c8",
+      "size_bytes": 2178988
+    },
+    {
+      "filename": "part-00001-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "sha256": "b02be899cc0d1d7d2b859fccd81caf6437f7608863d833adebc45131b8b3cc1b",
+      "size_bytes": 1823112
+    },
+    {
+      "filename": "part-00002-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "sha256": "8d35a46b681fd1702d12a8ac4a362eaec84462cf2d7c29d5312701a394301345",
+      "size_bytes": 2043718
+    },
+    {
+      "filename": "part-00003-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "sha256": "6de7fb8faa8eb62853b02388ee1798f3263c3a7f7d0ef2bfd07624b4a2bd9d75",
+      "size_bytes": 2367830
+    }
+  ],
+  "parquet_fingerprint": "de5414083456be7882f80f7988495b993330b8a5a022faa5a6ff83628e1b2ce9",
+  "built_at": "2026-11-12T05:44:01.661407+00:00",
+  "build_seconds": 51.617,
+  "serving_projection": "SQLite numeric postings copied directly from actual Spark DataFrame",
+  "source_text_notices": "Original bytes and full original text preserved for download and reading",
+  "catalog_sha256": "cba3c749a5ca3cffbb802d82da4f506e19f44c9c3fae37dce1ec329a9414c10e",
+  "bibliographic_labels_verified_against_originals": true
+}

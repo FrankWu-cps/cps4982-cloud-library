@@ -1,0 +1,980 @@
+{
+  "version": 1,
+  "project": "Cloud Library",
+  "framework": "Django",
+  "index_builder": "PySpark 4.0.1",
+  "serving_engine": "spark-built-sqlite",
+  "live_spark_in_cloud": false,
+  "book_count": 146,
+  "original_book_bytes": 104514067,
+  "index_sqlite_bytes": 292241408,
+  "compressed_index_bytes": 111967351,
+  "index_archive_parts": 14,
+  "catalog_sha256": "cba3c749a5ca3cffbb802d82da4f506e19f44c9c3fae37dce1ec329a9414c10e",
+  "parquet_fingerprint": "de5414083456be7882f80f7988495b993330b8a5a022faa5a6ff83628e1b2ce9",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 90,
+      "sha256": "d989b6fd538b34d663cfa405a72d484883bc5c7cbaa03f0af1a09cc0fd4eb0fb"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 261,
+      "sha256": "22552a40a46e9817f7d8216d675dc6c68cf788bb324a008d768a67f0a228578c"
+    },
+    {
+      "path": "READMEdeploy.md",
+      "size_bytes": 2965,
+      "sha256": "f1e11448b7d28fdf628032ba925793c78130dd7b4a0e68531d807ba7855be986"
+    },
+    {
+      "path": "app/config/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "app/config/settings.py",
+      "size_bytes": 1612,
+      "sha256": "4350d57517b4cc93e8c3aa1830a8804c6925eddaf26f5be2e74a94b0ae426e11"
+    },
+    {
+      "path": "app/config/urls.py",
+      "size_bytes": 91,
+      "sha256": "3cde6133666a8060638e2c4f0807b9c475e3dc77f58e3979a7157cfa296f4612"
+    },
+    {
+      "path": "app/config/wsgi.py",
+      "size_bytes": 164,
+      "sha256": "c9ac55f04e948c72ea52505763b80222a16f65b689b31d32259184166e731908"
+    },
+    {
+      "path": "app/manage.py",
+      "size_bytes": 321,
+      "sha256": "b27f36636c5e9ff5528ceb6a9f5559c47e40ed211d182f0b58c6b2035823bf89"
+    },
+    {
+      "path": "app/minisearch/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "app/minisearch/search_call.py",
+      "size_bytes": 10804,
+      "sha256": "b4828c93a7e02ec7800aad2c051ebf59304608b71ef6d0fa3f03ad4ef03684c5"
+    },
+    {
+      "path": "app/minisearch/static/folio.css",
+      "size_bytes": 16383,
+      "sha256": "bc3b92a2b0ebba2ab21d59fb539199c1b8fe70de87b9da1d539504e9914a6923"
+    },
+    {
+      "path": "app/minisearch/static/folio.js",
+      "size_bytes": 23060,
+      "sha256": "7c6db0eb7d1e56cb2fecb22abfd2ccda1b5bbbef40359457883a4d41cbd341a9"
+    },
+    {
+      "path": "app/minisearch/static/folio.svg",
+      "size_bytes": 280,
+      "sha256": "eda25d3c9a31746b2da0ea3ab6a2ab6066f474cb385416e5f2b0119b55dec5a1"
+    },
+    {
+      "path": "app/minisearch/templates/base.html",
+      "size_bytes": 3499,
+      "sha256": "1104265192d3b44c144cd00e6fa8c3c5dc6f17051db1cac68f1d27fe8f2c5845"
+    },
+    {
+      "path": "app/minisearch/templates/index.html",
+      "size_bytes": 3297,
+      "sha256": "718abcd1453cfd23fcdf81a484aa83831c185ea351c001d5fab55e03da32990a"
+    },
+    {
+      "path": "app/minisearch/templates/reader.html",
+      "size_bytes": 2485,
+      "sha256": "5287ccd0f1b2ae12cf8f3b0ffcfa74ceb2f19136080800034b4368bb2d357f32"
+    },
+    {
+      "path": "app/minisearch/urls.py",
+      "size_bytes": 629,
+      "sha256": "01aa3a27171c369a6e45d41fda24e1d5ecee3d3ed75f0042bf2c46990e38ae9c"
+    },
+    {
+      "path": "app/minisearch/views.py",
+      "size_bytes": 5418,
+      "sha256": "4cc7be075dd847593e4e23861929a7e408df4c26db21385dd37b8d13804534c6"
+    },
+    {
+      "path": "data/books/10.txt",
+      "size_bytes": 4452070,
+      "sha256": "ef4a0a6f3bf7254c2304a0d7b577200f2b13c5c37c9bb5c28875e4017bbf14e9"
+    },
+    {
+      "path": "data/books/100-0.txt",
+      "size_bytes": 5757108,
+      "sha256": "bb55572a9d9425b434ea6c07dd81997c342e05a8411a84b09b986ba07eda45c8"
+    },
+    {
+      "path": "data/books/10007.txt",
+      "size_bytes": 180104,
+      "sha256": "9d5354fd10f6d514d825fe2351417aa24a71715c2ddf23bba513ba6dcd689de6"
+    },
+    {
+      "path": "data/books/102-0.txt",
+      "size_bytes": 320252,
+      "sha256": "0f9b7767e60530774ac10abd2a1ca1290d1d28faeaf7a48b5124b5578320851d"
+    },
+    {
+      "path": "data/books/103.txt",
+      "size_bytes": 398631,
+      "sha256": "f95647ced7981db2c1c7c50c77a1b89e3df569d9a20e8ad5c9e40ed2d2f4d268"
+    },
+    {
+      "path": "data/books/107-0.txt",
+      "size_bytes": 830084,
+      "sha256": "3139a26505bfe6b5b481a7111ef1e43aaa5928fbda97adfeb9cf9c60be8ae6e7"
+    },
+    {
+      "path": "data/books/108-0.txt",
+      "size_bytes": 719617,
+      "sha256": "66000bac5dcff5aca6f80278254495961e87ea20e08f75b3329c4e1e9f095ad7"
+    },
+    {
+      "path": "data/books/1080.txt",
+      "size_bytes": 39700,
+      "sha256": "6f63d4b45e1e855251549d6cfabedec3ef940e59cba4244ff1daa118f93429c3"
+    },
+    {
+      "path": "data/books/10897.txt",
+      "size_bytes": 129924,
+      "sha256": "e65e92003c829d056d9b560f5172f9312084e491153e9d2a4edbcf3f47375322"
+    },
+    {
+      "path": "data/books/11-0.txt",
+      "size_bytes": 173595,
+      "sha256": "49a0b2726606e1290ac03a63978fa1dd1bd38a8d805704d98265f393533ea094"
+    },
+    {
+      "path": "data/books/110-0.txt",
+      "size_bytes": 895982,
+      "sha256": "216ab03570d0615f934e53163a47a4615c7ce384a4d5ba839c6754a5a5055b23"
+    },
+    {
+      "path": "data/books/111-0.txt",
+      "size_bytes": 478274,
+      "sha256": "313875f451bfd09231d36db68947aa97c0b4ebef280f2d9830c90ff7e09c3a38"
+    },
+    {
+      "path": "data/books/1112.txt",
+      "size_bytes": 178983,
+      "sha256": "a3ce6f4782c2ed13d7b4248d0e1077db773b19af487921d4b48d55f6e969f067"
+    },
+    {
+      "path": "data/books/113-0.txt",
+      "size_bytes": 475318,
+      "sha256": "b9348af9ab8057a49cc5378e97cfcfa872720e867411cc94a3f5a566353edf3d"
+    },
+    {
+      "path": "data/books/116-0.txt",
+      "size_bytes": 19992,
+      "sha256": "c997865f9b227030b3eb33414f3c9a8ebf6b2de50704e02e944f5b4a7641cd83"
+    },
+    {
+      "path": "data/books/1184-0.txt",
+      "size_bytes": 2783699,
+      "sha256": "dad44ddea23ecd0367b90a3a251fa74d439ed02a44ae12c88839089c641cd8d8"
+    },
+    {
+      "path": "data/books/119-0.txt",
+      "size_bytes": 922147,
+      "sha256": "b463edc35d0f8907c92181a57c36bb1ef98a46511af2ece6c147b365f53f2835"
+    },
+    {
+      "path": "data/books/12-0.txt",
+      "size_bytes": 193607,
+      "sha256": "24bae70935e7fce7be74357779c53861c0cd04b3687f3005c1a8687f2b909988"
+    },
+    {
+      "path": "data/books/120-0.txt",
+      "size_bytes": 400129,
+      "sha256": "4c350163715b7b1d0fc3bcbf11bfffc0cf2d107f69253f237111a7480809e192"
+    },
+    {
+      "path": "data/books/120.txt",
+      "size_bytes": 391563,
+      "sha256": "dce5b0bdbf5620daae3d485c11c6b3c08a9feb9dcc99cc18132a9b73a4b332a5"
+    },
+    {
+      "path": "data/books/121-0.txt",
+      "size_bytes": 468185,
+      "sha256": "b4dba6b7a0542113d2086514d8cc7d674d6437278d6a897590e73e3314bd5746"
+    },
+    {
+      "path": "data/books/122-0.txt",
+      "size_bytes": 838940,
+      "sha256": "02f79846c47947ebaa30e3425630754e2847a87b1c9490b7f28132df1fe5891a"
+    },
+    {
+      "path": "data/books/1228.txt",
+      "size_bytes": 970783,
+      "sha256": "6409a26a8774f0e7107e4c527f4e794e16417bf63bcce7dcbf13a0f95282d582"
+    },
+    {
+      "path": "data/books/1232.txt",
+      "size_bytes": 305853,
+      "sha256": "57b280e5967fd50e438d219795819e6b5afcd0e04c341860a1717df123a13be4"
+    },
+    {
+      "path": "data/books/125-0.txt",
+      "size_bytes": 692334,
+      "sha256": "f62e9309366fb646cf5d3d16cae7e108acb25effe68517fc3d969278a0a43d73"
+    },
+    {
+      "path": "data/books/1251.txt",
+      "size_bytes": 919234,
+      "sha256": "7d6a85e99b1419f8c4e6dd7f72d39848fa1b01b6f478c2d7aa484d14021e77b7"
+    },
+    {
+      "path": "data/books/1260.txt",
+      "size_bytes": 1070331,
+      "sha256": "bd82eb9b4ef06c23648b2df777dbdebd7deeb91f87e340163d53b5f6e2a3b858"
+    },
+    {
+      "path": "data/books/1268-0.txt",
+      "size_bytes": 1171600,
+      "sha256": "355bfdc3f9b5e384b1918e817dd086ce0df97f4d294c69f032fb70b95c1e737c"
+    },
+    {
+      "path": "data/books/132-0.txt",
+      "size_bytes": 340847,
+      "sha256": "4e476e5f10e9d67d206d24390c2ed0808140b362aae73538f51463fe0aac4f80"
+    },
+    {
+      "path": "data/books/1322.txt",
+      "size_bytes": 775617,
+      "sha256": "91b1adf9ae8e145fdf736bcc117bbc914898bd27e0352266ac2afe209e9e1335"
+    },
+    {
+      "path": "data/books/133-0.txt",
+      "size_bytes": 707406,
+      "sha256": "043f1fdb28b121393da29bcec49c0cef54b8a4093bf36c152dcde75169cb2d95"
+    },
+    {
+      "path": "data/books/134-0.txt",
+      "size_bytes": 284121,
+      "sha256": "14d777c0fcbfe283d09afe91bb01c9e2a2d16c1ec9afb28eec249e8ad6cd62b4"
+    },
+    {
+      "path": "data/books/1342-0.txt",
+      "size_bytes": 726223,
+      "sha256": "4fff6f740cc4cb3ff8d35d811e24f8799d80c73292c63e6692976f079951008d"
+    },
+    {
+      "path": "data/books/135-0.txt",
+      "size_bytes": 3369324,
+      "sha256": "5e27dad0fa0798291fbf57c4b937214f5ad734696e4e6e6df63b5989ecf87127"
+    },
+    {
+      "path": "data/books/137-0.txt",
+      "size_bytes": 112359,
+      "sha256": "9be1aa58258eeab2add3522f1e99968997c5b3f066498b33679b7207773f5f5a"
+    },
+    {
+      "path": "data/books/1399-0.txt",
+      "size_bytes": 2041122,
+      "sha256": "a1a2f7691bff927e1d531ee7b23d8c2f1cc963560803633947e66cba2673f84c"
+    },
+    {
+      "path": "data/books/140-0.txt",
+      "size_bytes": 854286,
+      "sha256": "b93b53cd3c7bbb5850c815cdbc93e15062af61b5251eb20ab5077c13c406d76d"
+    },
+    {
+      "path": "data/books/1400-0.txt",
+      "size_bytes": 1055026,
+      "sha256": "97ab5586c8ed780494a071c23b810dea27dca6203f2a179d6e7a07d1e0f4aa84"
+    },
+    {
+      "path": "data/books/1404.txt",
+      "size_bytes": 1186902,
+      "sha256": "90ac654e4fa95dc4ddafbf73e585dabb21dc3ee0bb72e112d50bba3d3422a283"
+    },
+    {
+      "path": "data/books/141-0.txt",
+      "size_bytes": 928708,
+      "sha256": "1d905cf534e2b9d377a51668255d59d30119da19ac8926b4ba662cb7a4236963"
+    },
+    {
+      "path": "data/books/142-0.txt",
+      "size_bytes": 556520,
+      "sha256": "f8249eba158bf5a3ee7569277d704ec52795c8f7b259912d771325f6386216c9"
+    },
+    {
+      "path": "data/books/143-0.txt",
+      "size_bytes": 700352,
+      "sha256": "33839ede9c7e76d9010959487e959f0454f193c3c81867ceaacf6ee84207207e"
+    },
+    {
+      "path": "data/books/144-0.txt",
+      "size_bytes": 799813,
+      "sha256": "3b296221b66831aed253b8867ca06ce9eb81d964763ffc600c9401e4fa048c88"
+    },
+    {
+      "path": "data/books/145-0.txt",
+      "size_bytes": 1865681,
+      "sha256": "f1ead68af684d2a076817f8700186e9b7e33ec733e85a6dce59a7dba5b32a9b0"
+    },
+    {
+      "path": "data/books/147-0.txt",
+      "size_bytes": 148145,
+      "sha256": "ea19cebdaf45fa825317f4ab3f7bf5e0daf6c38a3e93659486b7a72b71bef951"
+    },
+    {
+      "path": "data/books/147.txt",
+      "size_bytes": 148134,
+      "sha256": "b35e073e6a59fa293b626d27a89c6abdb505bbcc8a5d7ef4e94f3c964d6ad5bd"
+    },
+    {
+      "path": "data/books/149-0.txt",
+      "size_bytes": 235422,
+      "sha256": "f4fb83e96cc61931a2f99331f25365b40eabd02d7967b1815c562ddd7af9658a"
+    },
+    {
+      "path": "data/books/1497.txt",
+      "size_bytes": 1239081,
+      "sha256": "aef07f8b12559b4605416f7f434f22f36872d73e972e9ba31207a4333cf9a0af"
+    },
+    {
+      "path": "data/books/153-0.txt",
+      "size_bytes": 859258,
+      "sha256": "5a810af57625adec87196e066c523d3089e24b2231e601c0150bb8b4b3d88cf5"
+    },
+    {
+      "path": "data/books/15399.txt",
+      "size_bytes": 479239,
+      "sha256": "859e9c6afbe56df73a834e141c4acd0040b61e9843965e8acbad3f73cf053e63"
+    },
+    {
+      "path": "data/books/155-0.txt",
+      "size_bytes": 1135641,
+      "sha256": "15faf07d5a9fa51c3e086efdec2059f1041ebc8766c1ca2dfc74f9e15d414bd8"
+    },
+    {
+      "path": "data/books/158-0.txt",
+      "size_bytes": 927445,
+      "sha256": "89b601ce13c21eca31766bdd1a554842fc9ecb7d3638cc769f41712a523e24cf"
+    },
+    {
+      "path": "data/books/16-0.txt",
+      "size_bytes": 291927,
+      "sha256": "45107a3697cbb157e299f143c08e0933c45e257945bd5ee2e21b896e8119a202"
+    },
+    {
+      "path": "data/books/160-0.txt",
+      "size_bytes": 392845,
+      "sha256": "dad622b731270c2958c88a74c9308d0bcf91ba2cfe3376f6fa84e6317722c551"
+    },
+    {
+      "path": "data/books/161-0.txt",
+      "size_bytes": 712924,
+      "sha256": "e4a204e84280edcea70d1381829e4b1f1c08917d9291666b233269ce968f1ce2"
+    },
+    {
+      "path": "data/books/161.txt",
+      "size_bytes": 706124,
+      "sha256": "5028193ffb76c6062f90384faedc8c5dd449d08fbf8d195cf4740b3a6239e5af"
+    },
+    {
+      "path": "data/books/16328.txt",
+      "size_bytes": 301063,
+      "sha256": "2ef096c123316e08ec20ddd4e817a1f51c0466690f32205520c56033c0b5254b"
+    },
+    {
+      "path": "data/books/165-0.txt",
+      "size_bytes": 679935,
+      "sha256": "c296bdb4dea953cb1cdbec44c8ab6f21fec90f4472a5f5007c2cdc6cc0a4efd8"
+    },
+    {
+      "path": "data/books/166-0.txt",
+      "size_bytes": 343517,
+      "sha256": "e29e28ee57a0ccd6a02e69b698fc3adf9a01537205b8d09c118f22b13572da3d"
+    },
+    {
+      "path": "data/books/1661.txt",
+      "size_bytes": 594933,
+      "sha256": "242ec73a70f0a03dcbe007e32038e7deeaee004aaec9a09a07fa322743440fa8"
+    },
+    {
+      "path": "data/books/16643.txt",
+      "size_bytes": 567493,
+      "sha256": "e7d7015a5139278ce66b57063a34ff16d7d06f1e193b57b554d3c2e7ceea554a"
+    },
+    {
+      "path": "data/books/167-0.txt",
+      "size_bytes": 276818,
+      "sha256": "f59ec018d99d59f17f53782c9e4295ec6c3a32c2df9406e8bfec74b3259a6135"
+    },
+    {
+      "path": "data/books/171-0.txt",
+      "size_bytes": 236372,
+      "sha256": "b784b0b543ae6b5a6c1035f22891387fc045ce54d1311a932a8f24a9736d848a"
+    },
+    {
+      "path": "data/books/1727.txt",
+      "size_bytes": 709390,
+      "sha256": "d14d8b68295e081fc69e2c86fed7a01ccd43d5865b70454d3ea8536172982508"
+    },
+    {
+      "path": "data/books/174-0.txt",
+      "size_bytes": 465797,
+      "sha256": "22130512005947c713801ffe06354078b31f9cfb3eaeb4cbcb2cf7ba8614d0ea"
+    },
+    {
+      "path": "data/books/174.txt",
+      "size_bytes": 462075,
+      "sha256": "9c38d91f7e64cdae52113a2cda33dcd06ceaf6752734fc9113547df96ea630b3"
+    },
+    {
+      "path": "data/books/176-0.txt",
+      "size_bytes": 786963,
+      "sha256": "d5850be23a577aadf8bfaad0d6a47f951e5623da6fa1f4108eb3e1c5d2ea1e1d"
+    },
+    {
+      "path": "data/books/177-0.txt",
+      "size_bytes": 794196,
+      "sha256": "fe6a228fd70ac67c493414fe8b8bff85af7fd6bdbfdc8a0bc5d9e906645fd33b"
+    },
+    {
+      "path": "data/books/178-0.txt",
+      "size_bytes": 458504,
+      "sha256": "5728fc4b74b42bb0092627fd5eb6ea04131f6e22d4ba569a296537a0f4307b77"
+    },
+    {
+      "path": "data/books/179-0.txt",
+      "size_bytes": 371202,
+      "sha256": "8b45ab9d95aec5af84f4d5b6b1574e093d5d435d85db1dc503018532167364f6"
+    },
+    {
+      "path": "data/books/1952.txt",
+      "size_bytes": 52081,
+      "sha256": "a1e654d2ee702c3efc59490d6c75f78d7f6435690fa4182ea4eb07752f090ecc"
+    },
+    {
+      "path": "data/books/19942.txt",
+      "size_bytes": 229736,
+      "sha256": "a10ef7f1ba117d82788b7eceef3c70f5b65affb373c15a5076d9d1c9e897e561"
+    },
+    {
+      "path": "data/books/1998-0.txt",
+      "size_bytes": 680764,
+      "sha256": "0275b3cf17e9bf0d6cea6f443a8790f233d12cfd31b242403cf72630d425bdb9"
+    },
+    {
+      "path": "data/books/20203.txt",
+      "size_bytes": 467180,
+      "sha256": "6199b25164ef7330a535d25b723d40bb895e1382222ab429551911ba138b7204"
+    },
+    {
+      "path": "data/books/203-0.txt",
+      "size_bytes": 1075576,
+      "sha256": "bc4900e1772f681c942d1afa2c6ce924e1d67dd5615b94087c340965b4700470"
+    },
+    {
+      "path": "data/books/205-0.txt",
+      "size_bytes": 666758,
+      "sha256": "40862fac5a6a485ccc0e057e716a570223a549c90a0e6f527ce858a8c3b58776"
+    },
+    {
+      "path": "data/books/209-0.txt",
+      "size_bytes": 258212,
+      "sha256": "cc2003855ceda7ca36fa2e2578e0925da0d9a69b1e46a66eb984970094db0366"
+    },
+    {
+      "path": "data/books/2147-0.txt",
+      "size_bytes": 554594,
+      "sha256": "ae77ae250a0481269977bf9c5efeba764306da4c475459c889798c4580d7742b"
+    },
+    {
+      "path": "data/books/2148-0.txt",
+      "size_bytes": 583046,
+      "sha256": "7c42e4c3d843e8fcf80ac84e5b64124f15e540dbc4a2e73c63d253fff9ba8a40"
+    },
+    {
+      "path": "data/books/219-0.txt",
+      "size_bytes": 236401,
+      "sha256": "e820991b03bc8f25156100d44fb2ccf0b51f3a8525d84d56d3dad4aa05bbe2b2"
+    },
+    {
+      "path": "data/books/23.txt",
+      "size_bytes": 248369,
+      "sha256": "e5d134739ac6ffc86f2c9e2a30aebb2199510b04a0e6cb30cc07807ec9474bc4"
+    },
+    {
+      "path": "data/books/236-0.txt",
+      "size_bytes": 304376,
+      "sha256": "2f9486eb4776d23baf1064eebb73bb0093b808b13e10516e81e20d1dbe4909c9"
+    },
+    {
+      "path": "data/books/244-0.txt",
+      "size_bytes": 272277,
+      "sha256": "af0f6c590ca3901b3f61d5b90acac1ac16abc83e50b8541c9f17aff079829d96"
+    },
+    {
+      "path": "data/books/2500.txt",
+      "size_bytes": 241177,
+      "sha256": "48b65bccca8c86fcc58d35c4eba8b89163aa1a4d95c26e6546a66c4b2728a18e"
+    },
+    {
+      "path": "data/books/25305.txt",
+      "size_bytes": 493683,
+      "sha256": "a2dfe22254a0173fef986427d0b40fc2fd05de1e989a6e63e16008f9c706365d"
+    },
+    {
+      "path": "data/books/2542.txt",
+      "size_bytes": 165567,
+      "sha256": "0c616290ea92fae5835053d11571a1111a14a18ed6d116137586a6b020ca4ed2"
+    },
+    {
+      "path": "data/books/2554-0.txt",
+      "size_bytes": 1201733,
+      "sha256": "32d94b3ad762826e9b13a0dec8e0a29985725084ac9dcbe55552a45e6abdac87"
+    },
+    {
+      "path": "data/books/2591-0.txt",
+      "size_bytes": 560166,
+      "sha256": "3090ed9c87b91509ee59a4d8124cc9f09b80d513c446124059bdb6f214a4481b"
+    },
+    {
+      "path": "data/books/2600-0.txt",
+      "size_bytes": 3359550,
+      "sha256": "7ee689174bc033dffe89d0fb756175e8673062f024da9e4c4a921967d39175a7"
+    },
+    {
+      "path": "data/books/2680.txt",
+      "size_bytes": 425148,
+      "sha256": "149fd396bc1adc6752a391e800599dd85dbd2bafbef2343e7179320c369ff185"
+    },
+    {
+      "path": "data/books/2701-0.txt",
+      "size_bytes": 1276800,
+      "sha256": "fde50319a398be3bf8d53238eca38938ab54829abbae90546dd2a7aab766e8a1"
+    },
+    {
+      "path": "data/books/27827.txt",
+      "size_bytes": 359508,
+      "sha256": "19b273c7e4d437622e3eff4fff6ee647f01bcb6f8b384ceccf3ff2ee1a2e19a5"
+    },
+    {
+      "path": "data/books/28054-0.txt",
+      "size_bytes": 2044191,
+      "sha256": "2b7a96071c7b5f7b1fdd7007b49864827cf03c1f9db41fa09f69f0d7c48fbfd1"
+    },
+    {
+      "path": "data/books/2814-0.txt",
+      "size_bytes": 405900,
+      "sha256": "da7545c112c5580fc1572ee01c422ba25d9d82fe0e56c26e42c337374f72ca5e"
+    },
+    {
+      "path": "data/books/2852-0.txt",
+      "size_bytes": 352886,
+      "sha256": "c8a61868388cafca2c76d1d82ee610d24b2bb09913ba6da936c4aca94eb1d1e4"
+    },
+    {
+      "path": "data/books/3207.txt",
+      "size_bytes": 1254852,
+      "sha256": "bd2f3f282408d330e398d832e232fdda94e6ae08994c9f333704ed2a6ddad12c"
+    },
+    {
+      "path": "data/books/3296.txt",
+      "size_bytes": 632143,
+      "sha256": "b876679a3c91b0c06afcbc8a440ad65bf811e66f19accfaa30bde85041f526fb"
+    },
+    {
+      "path": "data/books/33.txt",
+      "size_bytes": 516425,
+      "sha256": "db9510422b132e679609053a8e2a407ce949e8bb09669289b774da459975a08c"
+    },
+    {
+      "path": "data/books/345.txt",
+      "size_bytes": 883160,
+      "sha256": "cffe55838a878a29da82a0e10b2909b7e46b6f7167ed7f815782465573e98f27"
+    },
+    {
+      "path": "data/books/34901.txt",
+      "size_bytes": 331043,
+      "sha256": "729c2390e812de19e0939b3170e44a55e122efc63b8fa833212171080b289ccb"
+    },
+    {
+      "path": "data/books/35.txt",
+      "size_bytes": 201900,
+      "sha256": "4cdb6a029d20301378f6c3356a8c6a144db5174414b840bb196138413d9f1470"
+    },
+    {
+      "path": "data/books/36.txt",
+      "size_bytes": 365413,
+      "sha256": "9ba4877e71e40ae58377dd4f4bc0e25cfda7cf1943f66adf4086e00a6f24b2d7"
+    },
+    {
+      "path": "data/books/3600-0.txt",
+      "size_bytes": 3105628,
+      "sha256": "8b30bd80f14bb3b7616e132cef5b226e5dc2d41255ddaa78b289e995edc28865"
+    },
+    {
+      "path": "data/books/368-0.txt",
+      "size_bytes": 264649,
+      "sha256": "42a45fbf9dda7ffb555f91b6ada075b530fa89a7045afbf2649ece89270e3acb"
+    },
+    {
+      "path": "data/books/3691.txt",
+      "size_bytes": 106529,
+      "sha256": "3c9a2077b6f7183325f9a7ceee8676210fae54b32dd248814eb11ea69a248f2f"
+    },
+    {
+      "path": "data/books/375.txt",
+      "size_bytes": 41459,
+      "sha256": "b4e7c3a03b7de43a7b96e8efbffc2966547910939ebaed5235cedd25bb6203ec"
+    },
+    {
+      "path": "data/books/3825.txt",
+      "size_bytes": 212650,
+      "sha256": "63ae8e34fb5d15b9ac7aee9857d4cf1e313fa0afe2c9c74135f9a16f7c69997e"
+    },
+    {
+      "path": "data/books/408.txt",
+      "size_bytes": 428503,
+      "sha256": "9bd37c11e11e26e311c5adbfa454a4c589edc626246fae6c541fcbf62de80922"
+    },
+    {
+      "path": "data/books/41-0.txt",
+      "size_bytes": 90994,
+      "sha256": "9dbaa83e29c71f1e40fd986c470f5ad97412413ba05052c059885bc3e46c491b"
+    },
+    {
+      "path": "data/books/42.txt",
+      "size_bytes": 162983,
+      "sha256": "55b5235679b74b5615f9153e8e2de2b32e570aecfd021808280597301a9f7704"
+    },
+    {
+      "path": "data/books/4300-0.txt",
+      "size_bytes": 1580890,
+      "sha256": "4ea566a510a547adcb01b52fe78ff269926fe8d5e8060591f725de6d77afa3ac"
+    },
+    {
+      "path": "data/books/4363.txt",
+      "size_bytes": 408781,
+      "sha256": "f0455880b40d544018950a43732e1a9f6362bd5ea670d8ed45a02df0e14bc47f"
+    },
+    {
+      "path": "data/books/45-0.txt",
+      "size_bytes": 606844,
+      "sha256": "7e99ec4f9f3080e3dd70551df7685709310a8140e3280436d0a4f5789255dd83"
+    },
+    {
+      "path": "data/books/4517-0.txt",
+      "size_bytes": 216205,
+      "sha256": "20efb1feb95a7943166da93bb193b0979e1e217b88e169b755a379fc037759f9"
+    },
+    {
+      "path": "data/books/46.txt",
+      "size_bytes": 181997,
+      "sha256": "4d84fabaf71814b86ff75cceb4d1f192fc12a5ffa7105e3b6e881825901d4b36"
+    },
+    {
+      "path": "data/books/514.txt",
+      "size_bytes": 1053440,
+      "sha256": "e6d764886dabbc2f5bb7d1bf6e31fe388a89b0296d960ed7951f0c66c605e901"
+    },
+    {
+      "path": "data/books/5200.txt",
+      "size_bytes": 141420,
+      "sha256": "c5163885d0dcd88b942eb8991912ce70f113c0a8e623eabb0001efe1c3175590"
+    },
+    {
+      "path": "data/books/55.txt",
+      "size_bytes": 232779,
+      "sha256": "8f77ce6c779b835598c8d2e5bb982e7bd81d95bd56f56522a8d4756d9d28efb2"
+    },
+    {
+      "path": "data/books/56248-0.txt",
+      "size_bytes": 707655,
+      "sha256": "36594710516a7d04d5a6b92640aecda25ce4be2fcbc68de927cffd37f6bbdaef"
+    },
+    {
+      "path": "data/books/61.txt",
+      "size_bytes": 94245,
+      "sha256": "5f95b6c12ad23086a8f2c6af57da87f3e7b34447434f93fc2829be0436fe51b0"
+    },
+    {
+      "path": "data/books/6130.txt",
+      "size_bytes": 1201891,
+      "sha256": "b187ea539939218ec94eff8e88ab32139fe57325b0dcdf5076daaa56c1c1df77"
+    },
+    {
+      "path": "data/books/730.txt",
+      "size_bytes": 936253,
+      "sha256": "e7f2578101d63d61a4d7cfbeee4d76857da7a758cb731d20769232722de23bc4"
+    },
+    {
+      "path": "data/books/7370.txt",
+      "size_bytes": 338836,
+      "sha256": "43960f9b516485dbd1c1f552d758ac5583f9da5a5cb2085ff4b721dabba22f21"
+    },
+    {
+      "path": "data/books/74-0.txt",
+      "size_bytes": 433025,
+      "sha256": "fb5e7cae42ed327a04c47c603b063395791bc7d54fba21d8038763b40a73e49a"
+    },
+    {
+      "path": "data/books/76-0.txt",
+      "size_bytes": 610370,
+      "sha256": "5e4dfc18d452cf959afd548379fdf5912163e27841401ec25557b1b5ebf8546c"
+    },
+    {
+      "path": "data/books/768.txt",
+      "size_bytes": 681638,
+      "sha256": "3677316a325f559ed6532ebe9be0ead03d492062b915086ff21a57c7f2157165"
+    },
+    {
+      "path": "data/books/77-0.txt",
+      "size_bytes": 649925,
+      "sha256": "cd98b30acaaab831d00c542d4b427e1d4d9c08c58cdefa1c0ffc92796bad7da4"
+    },
+    {
+      "path": "data/books/779.txt",
+      "size_bytes": 147204,
+      "sha256": "f14de1aa9c9b8e9c888cb3521ab60c4f7ffc9e273fc7b6d5eef8de7d6eba88e8"
+    },
+    {
+      "path": "data/books/78-0.txt",
+      "size_bytes": 515844,
+      "sha256": "738239732d2ed751fde6eb2a8611ba025cbd99b650acbccc31f9853614838dff"
+    },
+    {
+      "path": "data/books/786-0.txt",
+      "size_bytes": 626055,
+      "sha256": "086a962bb93eb533c51b869136fc9bb7c472d4e302f090e2691d130538593813"
+    },
+    {
+      "path": "data/books/815.txt",
+      "size_bytes": 1167671,
+      "sha256": "59e7aa2fb5e9c7e6671759f99c4dfb2782464feaa92ce69812e2f97cafce948e"
+    },
+    {
+      "path": "data/books/82-0.txt",
+      "size_bytes": 1164173,
+      "sha256": "58d0ba9b490557ff12102054d361d935cbe9b9a752c630091afe5391c45b1324"
+    },
+    {
+      "path": "data/books/829-0.txt",
+      "size_bytes": 611864,
+      "sha256": "37e0bf90ce1c9d254bae3ea75be1b0233771b2e2c0a832dd1f85b8d6bfb86935"
+    },
+    {
+      "path": "data/books/83-0.txt",
+      "size_bytes": 585322,
+      "sha256": "97cf97c86b5cc8279e4912417aa4644ae5c4ca61043d625aeffba05064c1efdb"
+    },
+    {
+      "path": "data/books/84-0.txt",
+      "size_bytes": 448821,
+      "sha256": "df7f61c96fb9e3448568299649bca5acf03f54fe657644618e26c316399f8eeb"
+    },
+    {
+      "path": "data/books/84.txt",
+      "size_bytes": 448689,
+      "sha256": "ac2878232edb5a1e29096810b6d5c2ebf74295d957457c8391a81137af914834"
+    },
+    {
+      "path": "data/books/844.txt",
+      "size_bytes": 142384,
+      "sha256": "a252ddf108cc24f2b1ad7c412c20464ef3ed75d8ff27e5b873b9b8f8ace742c9"
+    },
+    {
+      "path": "data/books/851.txt",
+      "size_bytes": 125852,
+      "sha256": "b46136838da65d6e063d6a61e8e489af1e7f352a545f0fb1ee67cb1b379a1749"
+    },
+    {
+      "path": "data/books/86-0.txt",
+      "size_bytes": 681559,
+      "sha256": "1066bbf053a12831317445cf685cbee23480871edcd95f2aef9e6ee8789d3677"
+    },
+    {
+      "path": "data/books/91-0.txt",
+      "size_bytes": 198079,
+      "sha256": "cdbaa1783e1b9737730652e82d8ce20ef78d6312751c2b237bee4e3f0aaacf08"
+    },
+    {
+      "path": "data/books/93-0.txt",
+      "size_bytes": 144793,
+      "sha256": "3e922ce8b43227e0665717e746324cd0782a07a245472ff679b81880eface244"
+    },
+    {
+      "path": "data/books/94-0.txt",
+      "size_bytes": 183125,
+      "sha256": "e0db7ae6b5849c222cb00c7d4dac602111f2153c5b74aabb52261fff8c89c49a"
+    },
+    {
+      "path": "data/books/95-0.txt",
+      "size_bytes": 322913,
+      "sha256": "ebee5d947d9a441d028e65d6c622f4761de3327308cbaaab0240b9bdf03fd447"
+    },
+    {
+      "path": "data/books/98-0.txt",
+      "size_bytes": 807231,
+      "sha256": "c6fe9ba5c9f1833226c18eea4c25805663c26d51d3967e93e4db8b2abea6b906"
+    },
+    {
+      "path": "data/books/996.txt",
+      "size_bytes": 2347796,
+      "sha256": "eca5beb41865c8f710a494dd9bae0ba8576f63ef29d9fb6fcf677551bf55ea31"
+    },
+    {
+      "path": "data/books/pg145.txt",
+      "size_bytes": 1847699,
+      "sha256": "dd0b1baab92e47a253e0a5e406361b525399a1dccbadce7a84d7993fc6b73add"
+    },
+    {
+      "path": "data/catalog.json",
+      "size_bytes": 281897,
+      "sha256": "cba3c749a5ca3cffbb802d82da4f506e19f44c9c3fae37dce1ec329a9414c10e"
+    },
+    {
+      "path": "data/index/manifest.json",
+      "size_bytes": 1999,
+      "sha256": "83593530d0e8a2f45d2bf0e833969b644ef217576718a5c5971fe15a3fc8e108"
+    },
+    {
+      "path": "data/index/parquet/part-00000-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "size_bytes": 2178988,
+      "sha256": "2f9a1399266434708b70aa29be0d9d7c25ad5ca6820733ecb70495c0d52172c8"
+    },
+    {
+      "path": "data/index/parquet/part-00001-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "size_bytes": 1823112,
+      "sha256": "b02be899cc0d1d7d2b859fccd81caf6437f7608863d833adebc45131b8b3cc1b"
+    },
+    {
+      "path": "data/index/parquet/part-00002-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "size_bytes": 2043718,
+      "sha256": "8d35a46b681fd1702d12a8ac4a362eaec84462cf2d7c29d5312701a394301345"
+    },
+    {
+      "path": "data/index/parquet/part-00003-53abb007-bb56-412d-b5ce-60f670cd426f-c000.snappy.parquet",
+      "size_bytes": 2367830,
+      "sha256": "6de7fb8faa8eb62853b02388ee1798f3263c3a7f7d0ef2bfd07624b4a2bd9d75"
+    },
+    {
+      "path": "deploy/__init__.py",
+      "size_bytes": 81,
+      "sha256": "e5423530b1fcb054b660e75682d4a0af4fa13aa526526042249c05d2b1273eff"
+    },
+    {
+      "path": "deploy/build.sh",
+      "size_bytes": 326,
+      "sha256": "adb93fb934921c4f160ef3207ddc0d05c2b2d570ccaa56bb06e61794e576f4e9"
+    },
+    {
+      "path": "deploy/index/archive.json",
+      "size_bytes": 2910,
+      "sha256": "7d25f9a9e221c0dd85696b451787c37d9b8f9cb3980cf6982cc489bb8f13b51b"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-000",
+      "size_bytes": 8388608,
+      "sha256": "d3723455842762012039f61b40f639a3716a9b1e67b239d210fa86324eb45dfb"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-001",
+      "size_bytes": 8388608,
+      "sha256": "f759dd73de75b778810531610d8e383006eb339333465526e632b211fdf8401a"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-002",
+      "size_bytes": 8388608,
+      "sha256": "3e607c09191a3280f939d446c1d396e24ceb42ef7747f8c560d5d2bd8d4d9fd6"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-003",
+      "size_bytes": 8388608,
+      "sha256": "43e3f12ed8e1155c7c0bf80df7e0592d1cc18b2ea7419d124953f6406de33ad6"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-004",
+      "size_bytes": 8388608,
+      "sha256": "57198d8335baf0942858243b309aaf8eae164decb5eb001b90d3a0a9d3dc6b6e"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-005",
+      "size_bytes": 8388608,
+      "sha256": "046ecf962d16bea0f08bff17d08df0a2e45a5b02901173f5a0fe3d8824fe66e8"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-006",
+      "size_bytes": 8388608,
+      "sha256": "12f3de780148200956e234d014e65ab71cb0e33ade753c1ef1ce8d9e56390c9d"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-007",
+      "size_bytes": 8388608,
+      "sha256": "f77a716c5e5aebacb761b3d9d3d595cd5ae8846aa84692648844d8d6e14b0beb"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-008",
+      "size_bytes": 8388608,
+      "sha256": "e5e132d8da85534a1d8546fa7c74df24098befe9725c9e87760d9c81b310816b"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-009",
+      "size_bytes": 8388608,
+      "sha256": "40a9fdb889e0f00dc09e0a723c9333140297d283f93ea53fa21860b184dd8cfa"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-010",
+      "size_bytes": 8388608,
+      "sha256": "ceca359f1cfc87b2936e6c297aa321b7ef74506c91b1579e27b6e0909cc65570"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-011",
+      "size_bytes": 8388608,
+      "sha256": "5ee723edfa27f15675d71544e7bd6db15a356132361a58a8eca204af27901acf"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-012",
+      "size_bytes": 8388608,
+      "sha256": "8aa76fd37618816065b66127c296e8988317b9f8fb062fd6220bf504526de301"
+    },
+    {
+      "path": "deploy/index/search.sqlite3.gz.part-013",
+      "size_bytes": 2915447,
+      "sha256": "fe9acf5dc23c13698095f131017ab4ccfa5ab26e6964e2f5ce4bf598649a1c7b"
+    },
+    {
+      "path": "deploy/settings.py",
+      "size_bytes": 1195,
+      "sha256": "ce7236b855c6f7e1dc6dac949d05862e611c750cfd5767d69ce20489d2a37d88"
+    },
+    {
+      "path": "deploy/start.sh",
+      "size_bytes": 304,
+      "sha256": "a81befa55b63b053d0d4f8a93cd1acfc8cd6a5da6fd312142028ab7e989eefa5"
+    },
+    {
+      "path": "render.yaml",
+      "size_bytes": 488,
+      "sha256": "968c75657e976ade4d9750f11c8180a7570c98cfb97d9656f0a1a58d680c8077"
+    },
+    {
+      "path": "requirements-web.txt",
+      "size_bytes": 209,
+      "sha256": "46e07e00255dbb18015ba87799fbf8424037a7d3a143995c29d990ceebf348e0"
+    },
+    {
+      "path": "scripts/deploy_restore.py",
+      "size_bytes": 2860,
+      "sha256": "565b40f2175a12150e3cdb072f8214caaf410a9e57c22ba46a2405e704096ae6"
+    }
+  ],
+  "total_files": 192,
+  "total_file_bytes": 225258696,
+  "note": "Manifest hashes cover all staged files except this release_manifest.json itself. No deployment or cloud write has occurred."
+}

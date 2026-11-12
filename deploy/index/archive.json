@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "book_count": 146,
+  "sqlite_bytes": 292241408,
+  "sqlite_sha256": "1856c6ac616bb61d81f125966872a128c8a53443908bd9693f44a6f927132660",
+  "gzip_bytes": 111967351,
+  "gzip_sha256": "085d682987412cf3616cb9a77481d1129948fa7681e7abcaca011daf80ccdbf6",
+  "chunk_size_bytes": 8388608,
+  "parts": [
+    {
+      "filename": "search.sqlite3.gz.part-000",
+      "size_bytes": 8388608,
+      "sha256": "d3723455842762012039f61b40f639a3716a9b1e67b239d210fa86324eb45dfb"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-001",
+      "size_bytes": 8388608,
+      "sha256": "f759dd73de75b778810531610d8e383006eb339333465526e632b211fdf8401a"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-002",
+      "size_bytes": 8388608,
+      "sha256": "3e607c09191a3280f939d446c1d396e24ceb42ef7747f8c560d5d2bd8d4d9fd6"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-003",
+      "size_bytes": 8388608,
+      "sha256": "43e3f12ed8e1155c7c0bf80df7e0592d1cc18b2ea7419d124953f6406de33ad6"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-004",
+      "size_bytes": 8388608,
+      "sha256": "57198d8335baf0942858243b309aaf8eae164decb5eb001b90d3a0a9d3dc6b6e"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-005",
+      "size_bytes": 8388608,
+      "sha256": "046ecf962d16bea0f08bff17d08df0a2e45a5b02901173f5a0fe3d8824fe66e8"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-006",
+      "size_bytes": 8388608,
+      "sha256": "12f3de780148200956e234d014e65ab71cb0e33ade753c1ef1ce8d9e56390c9d"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-007",
+      "size_bytes": 8388608,
+      "sha256": "f77a716c5e5aebacb761b3d9d3d595cd5ae8846aa84692648844d8d6e14b0beb"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-008",
+      "size_bytes": 8388608,
+      "sha256": "e5e132d8da85534a1d8546fa7c74df24098befe9725c9e87760d9c81b310816b"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-009",
+      "size_bytes": 8388608,
+      "sha256": "40a9fdb889e0f00dc09e0a723c9333140297d283f93ea53fa21860b184dd8cfa"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-010",
+      "size_bytes": 8388608,
+      "sha256": "ceca359f1cfc87b2936e6c297aa321b7ef74506c91b1579e27b6e0909cc65570"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-011",
+      "size_bytes": 8388608,
+      "sha256": "5ee723edfa27f15675d71544e7bd6db15a356132361a58a8eca204af27901acf"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-012",
+      "size_bytes": 8388608,
+      "sha256": "8aa76fd37618816065b66127c296e8988317b9f8fb062fd6220bf504526de301"
+    },
+    {
+      "filename": "search.sqlite3.gz.part-013",
+      "size_bytes": 2915447,
+      "sha256": "fe9acf5dc23c13698095f131017ab4ccfa5ab26e6964e2f5ce4bf598649a1c7b"
+    }
+  ],
+  "index_origin": "Exact immutable SQLite projection of the real PySpark Parquet result"
+}

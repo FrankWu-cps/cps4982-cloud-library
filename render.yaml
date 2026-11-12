@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: cloud-library-jinke
+    runtime: python
+    plan: free
+    buildCommand: bash deploy/build.sh
+    startCommand: bash deploy/start.sh
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.12
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_SETTINGS_MODULE
+        value: deploy.settings
+      - key: ALLOW_LIVE_SPARK
+        value: "0"
+      - key: PYTHONUNBUFFERED
+        value: "1"

@@ -1,0 +1,2 @@
+# Immutable source texts and manifests must retain their exact bytes on every OS.
+* -text
